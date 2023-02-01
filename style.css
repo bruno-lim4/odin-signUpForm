@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+img.bg {
+    position: absolute;
+    height: 100vh;
+    min-width: 100%;
+    z-index: -1;
+}
+
+.logo-section {
+    min-width: 30%;
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 80px;
+    background-color: rgba(0, 0, 0, 0.373);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    height: fit-content;
+}
+
+.logo img {
+    max-height: 150px;
+}
+
+.logo p {
+    color: white;
+    font-size: 4rem;
+}
+
+.credit {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.form-section {
+    font-size: 1.5rem;
+}
+button {
+    font-size: 1.5rem;
+}
+
+.header {
+    margin: 80px 0;
+    padding: 10px 20px;
+}
+
+.form {
+    padding: 10px 20px;
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.75);
+
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 30%;
+    margin: 20px 0;
+}
+
+form input {
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 1.5rem;
+}
