@@ -5,35 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Sign-Up Form</title>
+    <title>Sign-Up Page</title>
 </head>
 <body>
-    <div class="logo-section">
-        <img src="images/background.jpg" alt="Green Background" class="bg">
-        <div class="logo">
-            <img src="images/logo.png" alt="Odin Logo">
-            <p class="logo-text">ODIN</p>
+    <div class="content">
+        <div class="left">
+            <div class="logo">
+                <img src="images/logo.png" alt="Odin Logo">
+                <p>ODIN</p>
+            </div>
+            <div class="credits">
+                <p>Photo by Halie West on Unsplash</p>
+            </div>
         </div>
-        <div class="credit">
-            Photo by Halle West on Unsplash
+
+        <div class="right">
+            <div class="intro">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo iure blanditiis quis est dicta, atque assumenda inventore? Inventore atque laudantium deleniti quam accusamus nesciunt dignissimos molestias! Nisi nam sint libero.</p>
+            </div>
+            <div class="mid">
+                <h1>Let's do this</h1>
+                <div class="form">
+                    <form action="">
+                        <label for="name">First Name</label>
+                        <input type="text" name="name" id="name">
+
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname">
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone">
+
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                        
+                        <label for="confirm">Confirm Password</label>
+                        <input type="password" name="confirm" id="confirm">
+ 
+                        <button type="submit">Create Account</button>
+                    </form>
+                </div>
+                <p>Already have an account? Log in</p>
+            </div>
         </div>
-    </div>
-    <div class="form-section">
-        <div class="header">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, quas fugit laboriosam nemo dolorem aspernatur sed at illo. Nesciunt voluptas laudantium vitae consectetur dolore deleniti sed voluptatum repellendus atque quam.</p>
-        </div>
-        <div class="form">
-            <form action="" method="get">
-                <div class="input"><label for="firstName">First Name</label><input type="text" name="firstName" id="firstName"></div>
-                <div class="input"><label for="lastName">Last name</label><input type="text" name="lastName" id="lastName"></div>
-                <div class="input"><label for="email">Email</label><input type="email" name="email" id="email"></div>
-                <div class="input"><label for="phoneNumber">Phone Number</label><input type="text" name="phoneNumber" id="phoneNumber"></div>
-                <div class="input"><label for="password1">Password</label><input type="password" name="password1" id="password1"></div>
-                <div class="input"><label for="password2">Confirm Password</label><input type="password" name="password2" id="password2"></div>
-            </form>
-        </div>
-        <button class="create">Create Account</button>
-        <p>Already have an acoount? Log in</p>
     </div>
 </body>
 </html>
