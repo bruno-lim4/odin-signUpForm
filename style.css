@@ -1,13 +1,21 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url("./fonts/Norse-Bold.otf");
+}
+
 * {
     margin: 0;
     padding: 0;
+}
 
+body, html {
+    height: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .content {
     display: flex;
-    height: 100vh;
+    height: 100%;
 }
 
 .left {
@@ -15,6 +23,7 @@
 
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 
     padding: 50px 0px 10px 0px;
 
@@ -30,6 +39,8 @@
 }
 
 .left .logo {
+    font-family: Norse-Bold, sans-serif;
+
     background-color: rgba(0, 0, 0, 0.327);
     display: flex;
     align-items: center;
@@ -55,16 +66,16 @@
 
 
 .right {
-    padding: 50px 20px 50px 0px;
+    padding: 50px 20px 0px 0px;
 }
 
 .right .intro {
     padding-left: 50px;
 
+    margin-bottom: 50px;
+
     font-weight: bold;
     font-size: 1.5rem;
-
-    margin-bottom: 80px;
 }
 
 .right .mid {
@@ -72,11 +83,30 @@
 }
 
 form {
+    font-size: 0.9rem;
+
+    text-transform: uppercase;
+
+    border: 1px solid rgb(95, 95, 95);
+
+    border-radius: 7px;
+
+    -webkit-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.25);
+    box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.25);
+
     margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 50%;
+    padding: 20px 20px;
+}
 
-    margin-bottom: 50px;
+form input {
+    border-radius: 6px;
+    padding: 0 5px;
+    border: 1px solid gray;
 
-    padding-right: 60%;
+    height: 20px;
 }
 
 form .inp {
@@ -86,7 +116,6 @@ form .inp {
     flex-direction: column;
 
 }
-
 
 form .inps {
     display: flex;
@@ -105,4 +134,14 @@ form button {
     font-size: 1.5rem;
 
     cursor: pointer;
+}
+
+input:focus {
+    border: 1px solid rgb(3, 8, 255);
+}
+
+@media only screen and (max-width: 800px) {
+    form {
+        margin-right: 5%;
+    }
 }
